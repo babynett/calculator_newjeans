@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="newjeans_styles.css">
+    <link rel="script" type="text/javascript" href="newjeans_script.js">
+    <title>New Jeans Calculator</title>
+</head>
+<body>
+    <div>
+        <button id="play">PLAY / PAUSE</button>
+      </div>
+      
+      <audio id="player">
+        <source src='assets\ditto.mp3' type='audio/mpeg'/>
+      </audio>
+    <h3>Click on members to change calculator color :)</h3>
+    <h3 id="instructions">Click on button for background music >>></h3>
+    <div class="main-container">
+    <nav class="mem-nav">
+        <button class="item mem-1" id="dan" onclick="clrChange(this)"></button>
+        <button class="item mem-2" id="haerin" onclick="clrChange(this)"></button>
+        <button class="item mem-3" id="hanni" onclick="clrChange(this)"></button>
+        <button class="item mem-4" id="hyein" onclick="clrChange(this)"></button>
+        <button class="item mem-5" id="minji" onclick="clrChange(this)"></button>
+        <button class="item album" id="album" onclick="clrChange(this)"></button>
+    </nav>
+    </div>
+    <br>
+    <div class="container">
+        <div class="result">
+          <p id="result-box">0</p>
+        </div>
+    
+    
+        <div class="buttons">
+          <div class="button action-btn" id="clear"> AC </div>
+          <div class="button action-btn"> MC</div>
+          <div class="button num-button  action-btn"> %</div>
+          <div class="button num-button  calc-action-btn"> /</div>
+          <div class="button num-button seven">7</div>
+          <div class="button num-button eight">8</div>
+          <div class="button num-button  nine">9</div>
+          <div class="button num-button  calc-action-btn">*</div>
+          <div class="button num-button  four">4</div>
+          <div class="button num-button  five">5</div>
+          <div class="button num-button  six">6</div>
+          <div class="button num-button  calc-action-btn">-</div>
+          <div class="button num-button  one">1</div>
+          <div class="button num-button  two">2</div>
+          <div class="button num-button  three">3</div>
+          <div class="button num-button  calc-action-btn">+</div>
+          <div class="button num-button  zero">0</div>
+          <div class="button num-button  point">.</div>
+          <div class="button calc-action-btn" id="total">=</div>
+        </div>
+    
+      </div>
+      <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+      <script src="newjeans_script.js"></script>
+</body>
+</html>
